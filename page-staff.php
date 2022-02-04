@@ -2,10 +2,10 @@
 <main class="main">
 <?php get_template_part('template-parts/page-top-btn'); ?>
   <div class="page-top">
-    <div class="page-top-wrapper stuff-page-top">
-      <div class="page-top-content">
-        <p class="page-top-content-main">スタッフ紹介</p>
-        <p class="page-top-content-sub">STAFF</p>
+    <div class="page-top__wrapper stuff-page-top">
+      <div class="page-top__content">
+        <p class="page-top__content--main">スタッフ紹介</p>
+        <p class="page-top__content--sub">STAFF</p>
       </div>
     </div>
     <p class="page-top-bread">
@@ -15,19 +15,19 @@
 
   <section class="stuff-director" id="stuff-director">
     <div class="section-inner">
-      <div class="section-title">
+      <h2 class="section-title">
         <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span> 院長の挨拶 <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span>
-      </div>
+      </h2>
 
       <div class="stuff-director-inner">
-        <div class="stuff-director-left">
-          <div class="stuff-director-introduction">
-            <div class="stuff-director-message">気軽に相談できる<br>
+        <div class="stuff-director-content">
+          <div class="stuff-director-content__introduction">
+            <div class="stuff-director-content__message">気軽に相談できる<br>
               街の歯医者さんでありたい。</div>
-            <div class="stuff-director-text">当院は治療はもちろん、予防歯科にも力を入れておりますので、お口に関する相談だけでもお越しいただきたいと考えております。<br><br>
+            <div class="stuff-director-content__text">当院は治療はもちろん、予防歯科にも力を入れておりますので、お口に関する相談だけでもお越しいただきたいと考えております。<br><br>
 
               「患部を直すこと」より「未然に防ぐこと」が最も良い歯科医療と言えますので、些細なことでも気軽に話せる街の歯医者さんとして、明るい街づくりに貢献していきたいと考えております。</div>
-            <p class="stuff-director-name">みなみ歯科クリニック<br>院長 南 俊雄</p>
+            <p class="stuff-director-content__name">みなみ歯科クリニック<br>院長 南 俊雄</p>
           </div>
           <div class="stuff-director-sp-img">
             <img src="<?php echo get_template_directory_uri(); ?>/img/stuff-img/staff1-img.png" alt="">
@@ -35,30 +35,30 @@
 
           <ul class="stuff-director-career-items">
             <li class="stuff-director-career-item">
-              <div class="stuff-director-career-item-title">経歴</div>
-              <div class="stuff-director-career-list">
-                <div class="stuff-director-career-list1">2004年</div>
-                <div class="stuff-director-career-list2">東京医科歯科大学歯学部 卒業</div>
+              <div class="stuff-director-career-item__title">経歴</div>
+              <div class="stuff-director-career-item__list">
+                <div class="stuff-director-career-item__list1">2004年</div>
+                <div class="stuff-director-career-item__list2">東京医科歯科大学歯学部 卒業</div>
               </div>
-              <div class="stuff-director-career-list">
-                <div class="stuff-director-career-list1">2008年</div>
-                <div class="stuff-director-career-list2">東京歯科大学歯学研究科大学院修了
+              <div class="stuff-director-career-item__list">
+                <div class="stuff-director-career-item__list1">2008年</div>
+                <div class="stuff-director-career-item__list2">東京歯科大学歯学研究科大学院修了
                   <br> 博士(歯学)取得</div>
               </div>
-              <div class="stuff-director-career-list">
-                <div class="stuff-director-career-list1">2012年</div>
-                <div class="stuff-director-career-list2">みなみ歯科クリニック 開院</div>
+              <div class="stuff-director-career-item__list">
+                <div class="stuff-director-career-item__list1">2012年</div>
+                <div class="stuff-director-career-item__list2">みなみ歯科クリニック 開院</div>
               </div>
             </li>
             <li class="stuff-director-career-item">
-              <div class="stuff-director-career-item-title">資格</div>
-              <div class="stuff-director-career-list">歯科医師臨床研修指導歯科医</div>
-              <div class="stuff-director-career-list">博士(歯学)</div>
-              <div class="stuff-director-career-list">衛生検査技師</div>
+              <div class="stuff-director-career-item__title">資格</div>
+              <div class="stuff-director-career-item__list">歯科医師臨床研修指導歯科医</div>
+              <div class="stuff-director-career-item__list">博士(歯学)</div>
+              <div class="stuff-director-career-item__list">衛生検査技師</div>
             </li>
           </ul>
         </div>
-        <div class="stuff-director-pc-img"><img src="<?php echo get_template_directory_uri(); ?>/img/stuff-img/staff1-img.png" alt=""></div>
+        <div class="stuff-director-pc-img"><img src="<?php echo get_template_directory_uri(); ?>/img/stuff-img/staff1-img.png" alt="staff1-img"></div>
       </div>
     </div>
   </section>
@@ -88,9 +88,9 @@
 
   <section class="stuff-introduction" id="stuff-introduction">
     <div class="section-inner">
-      <div class="section-title">
+      <h2 class="section-title">
         <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span> スタッフ紹介 <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span>
-      </div>
+      </h2>
       <div class="stuff-introduction-inner">
         <div class="stuff-introduction-list">
           <div class="stuff-introduction-list-title">歯科衛生士</div>
@@ -115,7 +115,7 @@
                 $the_query->the_post();
               ?>
                 <div class="stuff-introduction-item">
-                  <div class="stuff-introduction-item-img">
+                  <div class="stuff-introduction-item__img">
                     <?php
                     if (has_post_thumbnail()) {
                       the_post_thumbnail('large');
@@ -124,8 +124,8 @@
                     }
                     ?>
                   </div>
-                  <p class="stuff-introduction-item-name">歯科衛生士<span><?php the_title(); ?></span></p>
-                  <table class="stuff-introduction-item-contents">
+                  <p class="stuff-introduction-item__name">歯科衛生士<span><?php the_title(); ?></span></p>
+                  <table class="stuff-introduction-item__contents">
                     <tr>
                       <th>出身地</th>
                       <td><?php the_field('birthplace'); ?></td>
@@ -169,7 +169,7 @@
               ?>
 
                 <div class="stuff-introduction-item">
-                  <div class="stuff-introduction-item-img">
+                  <div class="stuff-introduction-item__img">
                     <?php
                     if (has_post_thumbnail()) {
                       the_post_thumbnail('large');
@@ -178,8 +178,8 @@
                     }
                     ?>
                   </div>
-                  <p class="stuff-introduction-item-name">歯科衛生士<span><?php the_title(); ?></span></p>
-                  <table class="stuff-introduction-item-contents">
+                  <p class="stuff-introduction-item__name">歯科衛生士<span><?php the_title(); ?></span></p>
+                  <table class="stuff-introduction-item__contents">
                     <tr>
                       <th>出身地</th>
                       <td><?php the_field('birthplace'); ?></td>

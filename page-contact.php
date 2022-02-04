@@ -1,10 +1,10 @@
 <?php get_header() ?>
 <main class="main">
   <div class="page-top">
-    <div class="page-top-wrapper contact-page-top">
-      <div class="page-top-content">
-        <p class="page-top-content-main">スタッフ ブログ</p>
-        <p class="page-top-content-sub">STAFF BLOG</p>
+    <div class="page-top__wrapper contact-page-top">
+      <div class="page-top__content">
+        <p class="page-top__content--main">スタッフ ブログ</p>
+        <p class="page-top__content--sub">STAFF BLOG</p>
       </div>
     </div>
     <?php  get_template_part('template-parts/bcn_display'); ?>
@@ -18,9 +18,9 @@
 
   <section class="contact">
     <div class="contact-inner">
-      <div class="section-title">
+      <h2 class="section-title">
         <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span> お問い合わせフォーム <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span>
-      </div>
+      </h2>
       <div class="contact-form form">
         <?php echo do_shortcode('[contact-form-7 id="5" title="コンタクトフォーム 1"] '); ?>
       </div>

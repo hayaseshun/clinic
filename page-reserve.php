@@ -1,10 +1,10 @@
 <?php get_header() ?>
 <main class="main">
   <div class="page-top">
-    <div class="page-top-wrapper contact-page-top">
-      <div class="page-top-content">
-        <p class="page-top-content-main">WEB予約</p>
-        <p class="page-top-content-sub">RESERVE</p>
+    <div class="page-top__wrapper contact-page-top">
+      <div class="page-top__content">
+        <p class="page-top__content--main">WEB予約</p>
+        <p class="page-top__content--sub">RESERVE</p>
       </div>
     </div>
     <?php get_template_part('template-parts/bcn_display'); ?>
@@ -35,9 +35,9 @@
 
   <section class="reserve">
     <div class="reserve-inner">
-      <div class="section-title">
+      <h2 class="section-title">
         <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span> 予約フォーム <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span>
-      </div>
+      </h2>
     </div>
     <div class="reserve-form form">
       <?php echo do_shortcode('[contact-form-7 id="181" title="予約"]')

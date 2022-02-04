@@ -1,10 +1,10 @@
 <?php get_header() ?>
 <main class="main">
     <div class="page-top">
-      <div class="page-top-wrapper contact-page-top">
-        <div class="page-top-content">
-          <p class="page-top-content-main">スタッフ ブログ</p>
-          <p class="page-top-content-sub">STAFF BLOG</p>
+      <div class="page-top__wrapper contact-page-top">
+        <div class="page-top__content">
+          <p class="page-top__content--main">スタッフ ブログ</p>
+          <p class="page-top__content--sub">STAFF BLOG</p>
         </div>
       </div>
       <?php  get_template_part('template-parts/bcn_display'); ?>

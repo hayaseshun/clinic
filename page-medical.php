@@ -2,10 +2,10 @@
 <main class="main">
   <?php get_template_part('template-parts/page-top-btn'); ?>
   <div class="page-top">
-    <div class="page-top-wrapper medical-page-top">
-      <div class="page-top-content">
-        <p class="page-top-content-main">診療案内</p>
-        <p class="page-top-content-sub">MEDICAL</p>
+    <div class="page-top__wrapper medical-page-top">
+      <div class="page-top__content">
+        <p class="page-top__content--main">診療案内</p>
+        <p class="page-top__content--sub">MEDICAL</p>
       </div>
     </div>
     <?php get_template_part('template-parts/bcn_display'); ?>
@@ -33,7 +33,7 @@
             <?php while ($the_query->have_posts()) :
               $the_query->the_post(); ?>
               <li class="service-item">
-                <a href="#post-<?php the_ID(); ?>" class="service-item-link">
+                <a href="#post-<?php the_ID(); ?>" class="service-item__link">
                   <?php the_title(); ?>
                 </a>
               </li>
@@ -63,7 +63,7 @@
               $the_query->the_post(); ?>
 
               <li class="service-item">
-                <a href="#post-<?php the_ID(); ?>" class="service-item-link">
+                <a href="#post-<?php the_ID(); ?>" class="service-item__link">
                   <?php the_title(); ?>
                 </a>
               </li>
@@ -78,11 +78,11 @@
     <div class="page-service-bg-top"></div>
     <div class="page-service-bg">
       <div class="section-inner">
-        <div class="section-title">
+        <h2 class="section-title">
           <span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span> 一般診療 <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///">
           </span>
-        </div>
+        </h2>
 
         <div class="page-service-inner">
           <ul class="page-service-items">
@@ -103,15 +103,15 @@
               <?php while ($the_query->have_posts()) :
                 $the_query->the_post(); ?>
                 <li class="page-service-item" id="post-<?php the_ID(); ?>">
-                  <div class="page-service-item-head">
-                    <div class="page-service-item-title1"><?php the_title(); ?></div>
-                    <div class="page-service-item-title2"><?php the_field('problem'); ?></div>
+                  <div class="page-service-item__head">
+                    <div class="page-service-item__title1"><?php the_title(); ?></div>
+                    <div class="page-service-item__title2"><?php the_field('problem'); ?></div>
                   </div>
-                  <div class="page-service-item-content">
-                    <div class="page-service-item-text">
+                  <div class="page-service-item__content">
+                    <div class="page-service-item__text">
                       <?php the_field('introduce'); ?>
                     </div>
-                    <div class="page-service-item-img">
+                    <div class="page-service-item__img">
                       <?php
                       if (has_post_thumbnail()) {
                         the_post_thumbnail('large');
@@ -136,11 +136,11 @@
     <div class="page-service-bg-top"></div>
     <div class="page-service-bg">
       <div class="section-inner">
-        <div class="section-title">
+        <h2 class="section-title">
           <span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///"></span> 特殊診療 <span><img src="<?php echo get_template_directory_uri(); ?>/img/title-deco.png" alt="///">
           </span>
-        </div>
+        </h2>
 
         <div class="page-service-inner">
           <ul class="page-service-items">
@@ -162,15 +162,15 @@
                 $the_query->the_post(); ?>
 
                 <li class="page-service-item" id="post-<?php the_ID(); ?>">
-                  <div class="page-service-item-head">
-                    <div class="page-service-item-title1"><?php the_title(); ?></div>
-                    <div class="page-service-item-title2"><?php the_field('problem'); ?></div>
+                  <div class="page-service-item__head">
+                    <div class="page-service-item__title1"><?php the_title(); ?></div>
+                    <div class="page-service-item__title2"><?php the_field('problem'); ?></div>
                   </div>
-                  <div class="page-service-item-content">
-                    <div class="page-service-item-text">
+                  <div class="page-service-item__content">
+                    <div class="page-service-item__text">
                       <?php the_field('introduce'); ?>
                     </div>
-                    <div class="page-service-item-img">
+                    <div class="page-service-item__img">
                       <?php
                       if (has_post_thumbnail()) {
                         the_post_thumbnail('large');

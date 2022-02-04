@@ -1,5 +1,5 @@
 <aside id="secondary">
-  <div class="side-clinic-container">
+  <div class="side-clinic">
     <div class="side-head">
       <div class="side-head-img">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -16,11 +16,11 @@
         クリニックの紹介
       </div>
     </div>
-    <div class="side-clinic-img"><img src="<?php echo get_template_directory_uri(); ?>/img/archive-img/sidebar-img_1.png" alt=""></div>
-    <div class="side-clinic-content">
-      <p class="side-clinic-content-title">みなみ歯科クリニック</p>
-      <p class="side-clinic-content-text">お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。</p>
-      <a href="<?php echo esc_url(home_url()); ?>/about/" class="side-clinic-content-link">当院について</a>
+    <div class="side-clinic__img"><img src="<?php echo get_template_directory_uri(); ?>/img/archive-img/sidebar-img_1.png" alt=""></div>
+    <div class="side-clinic__content">
+      <p class="side-clinic__content-title">みなみ歯科クリニック</p>
+      <p class="side-clinic__content-text">お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。</p>
+      <a href="<?php echo esc_url(home_url()); ?>/about/" class="side-clinic__content-link">当院について</a>
     </div>
   </div>
 
@@ -43,8 +43,8 @@
           the_post();
         ?>
           <div class="side-blog-item">
-            <a href="<?php the_permalink(); ?>" class="side-blog-link">
-              <div class="side-blog-item-img">
+            <a href="<?php the_permalink(); ?>" class="side-blog-item__link">
+              <div class="side-blog-item__img">
                 <?php
                 if (has_post_thumbnail()) {
                   the_post_thumbnail('large');
@@ -53,9 +53,9 @@
                 }
                 ?>
               </div>
-              <div class="side-blog-item-right">
-                <p class="side-blog-item-tag">お知らせ</p>
-                <p class="side-blog-item-title">
+              <div class="side-blog-item__right">
+                <p class="side-blog-item__tag">お知らせ</p>
+                <p class="side-blog-item__title">
                   <?php
                   $word_count = '22'; //表示する文字数
                   $post_title = get_the_title(); //タイトル取得
@@ -67,7 +67,7 @@
                   }
                   ?>
                 </p>
-                <p class="side-blog-item-time"><?php the_time('Y,n,j'); ?></p>
+                <p class="side-blog-item__time"><?php the_time('Y,n,j'); ?></p>
               </div>
             </a>
           </div>
@@ -85,22 +85,22 @@
     </div>
     <ul class="side-category-items">
       <li class="side-category-item">
-        <a href="" class="side-category-item-link">
+        <a href="" class="side-category-item__link">
           テキストテキスト
         </a>
       </li>
       <li class="side-category-item">
-        <a href="" class="side-category-item-link">
+        <a href="" class="side-category-item__link">
           テキストテキスト
         </a>
       </li>
       <li class="side-category-item">
-        <a href="" class="side-category-item-link">
+        <a href="" class="side-category-item__link">
           テキストテキスト
         </a>
       </li>
       <li class="side-category-item">
-        <a href="" class="side-category-item-link">
+        <a href="" class="side-category-item__link">
           テキストテキスト
         </a>
       </li>
