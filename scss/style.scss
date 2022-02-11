@@ -43,7 +43,6 @@ img {
   height: auto;
   vertical-align: top;
 }
-
 /*=====================================================
 #共通
 ===================================================== */
@@ -129,6 +128,7 @@ img {
     bottom: 90px;
   }
 }
+
 /*=======================================
 # header
 =======================================*/
@@ -1439,7 +1439,7 @@ img {
     }
   }
 
-  &__content--category {
+  &__content-category {
     background: $color-main;
     display: inline-block;
     color: $color-background;
@@ -1463,7 +1463,7 @@ img {
     }
   }
 
-  &__content--text {
+  &__content-text {
     &:hover {
       color: $color-main;
     }

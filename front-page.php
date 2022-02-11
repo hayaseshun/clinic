@@ -185,7 +185,7 @@ Template Name: トップページ      //ここの記述
                   ?>
                 </div>
                 <div class="blog-item__content">
-                  <p class="blog-item__content--category">
+                  <p class="blog-item__content-category">
                     <?php
                     $terms = get_the_terms('', 'other');
                     if ($terms) {
@@ -195,8 +195,8 @@ Template Name: トップページ      //ここの記述
                     }
                     ?>
                   </p>
-                  <p class="blog-item__content--text"><?php the_title(); ?></p>
-                  <div class="blog-item__content--time"><?php the_time('Y.n.j'); ?></div>
+                  <p class="blog-item__content-text"><?php the_title(); ?></p>
+                  <div class="blog-item__content-time"><?php the_time('Y.n.j'); ?></div>
                 </div>
               </a>
             </div>
