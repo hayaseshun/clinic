@@ -1,0 +1,168 @@
+@use "../foundation";
+/*=====================================================
+# single.php
+===================================================== */
+.single-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 160px;
+  margin-top: 75px;
+  @include foundation.mq(tab) {
+    margin: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px;
+    display: block;
+  }
+}
+.single-main-container {
+  max-width: 670px;
+  @include foundation.mq(pc) {
+    margin-right: 30px;
+  }
+  @include foundation.mq(tab) {
+    margin-right: 15px;
+  }
+}
+.single-main-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  @include foundation.mq(sm) {
+    font-size: 2rem;
+  }
+}
+.single-time-category {
+  display: flex;
+}
+.single-time {
+  color: foundation.$color-main;
+  font-size: 1.6rem;
+  margin-right: 32px;
+  font-weight: 600;
+  span {
+    margin-right: 6px;
+  }
+}
+.single-category {
+  font-size: 1.1rem;
+  padding: 6px 11px;
+  background: foundation.$color-main;
+  border-radius: 20px;
+  color: foundation.$color-background;
+}
+.main-title-text {
+  margin-top: 60px;
+  line-height: (24 / 14);
+  font-weight: 600;
+  a {
+    color: foundation.$color-main;
+    border-bottom: 1px solid foundation.$color-main;
+  }
+}
+.single-main-title2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: foundation.$color-main;
+  margin-top: 70px;
+  padding-left: 20px;
+  border-left: 5px solid foundation.$color-main;
+  @include foundation.mq(sm) {
+    margin-top: 60px;
+    font-size: 1.8rem;
+  }
+}
+.main-title2-img {
+  margin-top: 20px;
+}
+.single-main-title3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: foundation.$color-main;
+  margin-top: 40px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid foundation.$color-main;
+  @include foundation.mq(sm) {
+    font-size: 1.6rem;
+  }
+}
+.main-title-text3 {
+  line-height: (24 / 14);
+  margin-top: 16px;
+}
+.single-main-title4 {
+  margin-top: 60px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: foundation.$color-main;
+}
+.main-title-text4 {
+  margin-top: 16px;
+  line-height: (24 / 14);
+  @include foundation.mq(sm) {
+    font-size: 14px;
+  }
+}
+.single_main_list {
+  margin-left: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.page-entry-nav {
+  margin-top: 100px;
+  @include foundation.mq(pc) {
+    text-align: center;
+  }
+  @include foundation.mq(tab) {
+    text-align: center;
+  }
+}
+.page-entry-before {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 8px 16px 8px 35px;
+  color: foundation.$color-background;
+  background: foundation.$color-main;
+  font-weight: 600;
+  position: relative;
+  @include foundation.mq(sm) {
+    margin-right: 12px;
+  }
+  &::before {
+    position: absolute;
+    content: url(../img/archive-img/arrow-circleleft.png);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    height: 16px;
+  }
+}
+.page-entry-all {
+  margin-right: 20px;
+  display: inline-block;
+  border: 1px solid foundation.$color-main;
+  color: foundation.$color-main;
+  padding: 11px 17px;
+  font-weight: 600;
+  @include foundation.mq(sm) {
+    margin-right: 12px;
+  }
+}
+.page-entry-after {
+  display: inline-block;
+  padding: 8px 35px 8px 16px;
+  color: foundation.$color-background;
+  background: foundation.$color-main;
+  font-weight: 600;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url(../img/archive-img/arrow-circle-right.png);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    height: 16px;
+  }
+}

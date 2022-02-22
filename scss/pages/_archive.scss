@@ -1,0 +1,85 @@
+@use "../foundation";
+/*=====================================================
+# archive.php
+===================================================== */
+.archive {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 160px;
+  @include foundation.mq(tab) {
+    margin: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px;
+  }
+}
+.archive-content {
+  display: flex;
+  @include foundation.mq(sm) {
+    display: block;
+  }
+}
+.archive-inner {
+  max-width: 680px;
+  margin-right: 30px;
+}
+
+.archive-item {
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: foundation.$color-text;
+  }
+
+  &__img {
+    width: 382px;
+    margin-right: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__category {
+    color: foundation.$color-background;
+    background: foundation.$color-main;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 17px;
+    @include foundation.mq(sm) {
+      font-size: 1rem;
+      padding: 2px 8px;
+    }
+  }
+  &__title {
+    margin-top: 9px;
+    font-size: 1.6rem;
+    color: foundation.$color-text;
+    font-weight: 600;
+    @include foundation.mq(sm) {
+      font-size: 1.4rem;
+      margin-top: 8px;
+    }
+  }
+
+  &__time {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #888888;
+    @include foundation.mq(sm) {
+      margin-top: 8px;
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@use "../foundation";
+/*=====================================================
+# reserve.php
+===================================================== */
+.reserve-message-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  @include foundation.mq(sm) {
+    font-size: 2rem;
+  }
+}
+.reserve-tel-icon-content {
+  margin-top: 15px;
+  @include foundation.mq(sm) {
+    margin-top: 30px;
+  }
+}
+.reserve-tel-img {
+  width: 260px;
+  img {
+    width: 100%;
+  }
+}
+.reserve-tel-time {
+  font-size: 1.2rem;
+  color: foundation.$color-main;
+  margin-left: 55px;
+}
+.reserve-tel-message {
+  margin-top: 22px;
+  @include foundation.mq(sm) {
+    margin-top: 15px;
+  }
+}
+.reserve-mail {
+  margin-top: 38px;
+}
+.reserve-mail-message {
+  margin-top: 18px;
+  @include foundation.mq(sm) {
+    margin-top: 22px;
+  }
+}
+.reserve {
+  padding-bottom: 160px;
+  @include foundation.mq(tab) {
+    margin: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px;
+  }
+}
+.reserve-date {
+  display: block;
+  & + & {
+    margin-top: 20px;
+  }
+}
+.reserve-radio-wrap {
+  display: flex;
+  @include foundation.mq(sm) {
+    margin-top: 20px;
+  }
+}
+.your-check-items {
+  display: flex;
+  flex-wrap: wrap;
+  @include foundation.mq(sm) {
+    margin-top: 20px;
+  }
+}
+.form-radio {
+  [type="radio"] {
+    display: none;
+  }
+  .wpcf7-list-item-label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 36px;
+    font-size: 1.4rem;
+    margin-right: 32px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border: 1px solid foundation.$color-main;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      top: 50%;
+      left: 7px;
+      transform: translateY(-50%);
+      background: foundation.$color-main;
+      display: none;
+    }
+  }
+
+  [type="radio"]:checked + .wpcf7-list-item-label {
+    &::after {
+      display: block;
+    }
+  }
+}
+.wpcf7-form-control-wrap {
+  display: block;
+}
+.form-checkbox {
+  [type="checkbox"] {
+    display: none;
+  }
+  .wpcf7-list-item-label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 28px;
+    white-space: nowrap;
+    height: 24px;
+    line-height: 24px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-right: 32px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 21px;
+      height: 21px;
+      border: solid 1px foundation.$color-main;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 9px;
+      height: 22px;
+      top: 50%;
+      left: 5px;
+      border-right: 2px solid foundation.$color-main;
+      border-bottom: 2px solid foundation.$color-main;
+      transform: translateY(calc(-50% - 4px)) rotate(45deg);
+      display: none;
+    }
+  }
+
+  [type="checkbox"]:checked + .wpcf7-list-item-label {
+    &::after {
+      display: block;
+    }
+  }
+}
+

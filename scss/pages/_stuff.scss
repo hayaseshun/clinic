@@ -1,0 +1,242 @@
+@use "../foundation";
+/*=====================================================
+# stuff.php
+===================================================== */
+.stuff-director {
+  @include foundation.mq(tab) {
+    margin: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px;
+  }
+}
+.stuff-director-inner {
+  margin-top: 60px;
+  display: flex;
+  @include foundation.mq(sm) {
+    margin-top: 40px;
+  }
+}
+
+.stuff-director-content {
+  width: 50%;
+  @include foundation.mq(pc) {
+    margin-right: 80px;
+  }
+  @include foundation.mq(tab) {
+    margin-right: 40px;
+  }
+  @include foundation.mq(sm) {
+    width: 100%;
+  }
+
+  &__message {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: (44 / 28);
+    letter-spacing: 2px;
+    @include foundation.mq(tab) {
+      font-size: 24rem;
+    }
+    @include foundation.mq(sm) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    margin-top: 40px;
+    line-height: (24 / 14);
+    font-weight: 500;
+    @include foundation.mq(tab) {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+    @include foundation.mq(sm) {
+      margin-top: 30px;
+    }
+  }
+
+  &__name {
+    margin-top: 20px;
+    line-height: (24 / 14);
+    @include foundation.mq(sm) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.stuff-director-sp-img {
+  display: none;
+  @include foundation.mq(sm) {
+    display: block;
+    margin-top: 25px;
+  }
+}
+.stuff-director-pc-img {
+  width: 50%;
+  margin-top: 10px;
+  @include foundation.mq(sm) {
+    display: none;
+  }
+}
+.stuff-director-career-items {
+  margin-top: 46px;
+  @include foundation.mq(tab) {
+    margin-top: 30px;
+  }
+  @include foundation.mq(sm) {
+    margin-top: 40px;
+  }
+}
+.stuff-director-career-item {
+  @include foundation.mq(pc) {
+    & + & {
+      margin-top: 24px;
+    }
+  }
+  @include foundation.mq(tab) {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  @include foundation.mq(sm) {
+    & + & {
+      margin-top: 35px;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #393939;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 12px;
+    @include foundation.mq(tab) {
+      margin-top: 12px;
+    }
+  }
+
+  &__list1 {
+    margin-right: 16px;
+  }
+}
+
+/*=====================================================
+# swiper2
+===================================================== */
+.swiper2 {
+  margin-top: 140px;
+  overflow: hidden;
+  @include foundation.mq(sm) {
+    margin-top: 80px;
+  }
+}
+
+/*=====================================================
+# stuff-introduction
+===================================================== */
+.stuff-introduction {
+  padding-bottom: 160px;
+  padding-top: 175px;
+  @include foundation.mq(tab) {
+    margin: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px;
+    padding-top: 110px;
+  }
+}
+.stuff-introduction-inner {
+  margin-top: 60px;
+  @include foundation.mq(sm) {
+    margin-top: 40px;
+  }
+}
+.stuff-introduction-list {
+  &:not(:first-child) {
+    margin-top: 37px;
+    @include foundation.mq(sm) {
+      margin-top: 15px;
+    }
+  }
+}
+.stuff-introduction-list-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid foundation.$color-text;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.stuff-introduction-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.stuff-introduction-item {
+  @include foundation.mq(pc) {
+    width: calc(33.3% - 80px * 2 / 3);
+    &:not(:nth-child(3n + 1)) {
+      margin-left: 80px;
+    }
+    &:nth-child(n + 4) {
+      margin-top: 42px;
+    }
+  }
+  @include foundation.mq(tab) {
+    width: calc(50% - 20px / 2);
+    &:not(:nth-child(odd)) {
+      margin-left: 20px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 60px;
+    }
+  }
+  @include foundation.mq(sm) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
+
+  &__img {
+    @include foundation.mq(tab) {
+      text-align: center;
+    }
+    @include foundation.mq(sm) {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__name {
+    margin: 16px 0;
+    text-align: center;
+    span {
+      margin-left: 16px;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+
+  &__contents {
+    table-layout: fixed;
+    width: 100%;
+    @include foundation.mq(pc) {
+    }
+    th,
+    td {
+      padding: 17px 0;
+      font-weight: 600;
+    }
+    th {
+      background: #dff1fd;
+    }
+    td {
+      text-align: center;
+    }
+  }
+}

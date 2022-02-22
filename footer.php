@@ -11,8 +11,8 @@
           </a>
         </div>
         <div class="footer-btn-inner">
-          <a href="<?php echo esc_url(home_url()) ?>/reserve/" class="footer-reservation-btn">WEB予約</a>
-          <a href="<?php echo esc_url(home_url()) ?>/contact/" class="footer-contact-btn">お問い合わせ</a>
+          <a href="<?php echo esc_url(home_url()) ?>/reserve/" class="footer-reservation-btn footer-btn">WEB予約</a>
+          <a href="<?php echo esc_url(home_url()) ?>/contact/" class="footer-contact-btn footer-btn">お問い合わせ</a>
         </div>
         <div class="footer-calender">
           <img src="<?php echo get_template_directory_uri() ?>/img/medicalTimeSheet.png" alt="time-sheet">

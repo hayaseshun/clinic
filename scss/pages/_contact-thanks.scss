@@ -1,0 +1,30 @@
+@use "../foundation";
+/*=====================================================
+# contact-thanks.php
+===================================================== */
+.complete-message {
+  max-width: 728px;
+  margin: 80px auto 160px;
+  line-height: (24 / 14);
+  @include foundation.mq(tab) {
+    margin: 60px 20px 100px;
+  }
+  @include foundation.mq(sm) {
+    margin: 60px 20px 100px;
+  }
+  span {
+    color: foundation.$color-accent;
+  }
+}
+
+/*=====================================================
+# contact-complete
+===================================================== */
+.contact-complete-message {
+  text-align: center;
+  padding-bottom: 160px;
+  font-weight: 600;
+  span {
+    color: foundation.$color-accent;
+  }
+}

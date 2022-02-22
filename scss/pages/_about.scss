@@ -1,0 +1,184 @@
+@use "../foundation";
+/*=====================================================
+# about
+===================================================== */
+.policy-feature {
+  overflow: hidden;
+  padding-top: 10px;
+  @include foundation.mq(sm) {
+    margin-top: 60px;
+  }
+  .util-btn {
+    @include foundation.mq(sm) {
+      text-align: center;
+    }
+  }
+}
+.policy-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 180px 0 120px 0;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  @include foundation.mq(tab) {
+    padding: 90px 0 60px;
+  }
+  @include foundation.mq(sm) {
+    display: block;
+    padding: 90px 0 60px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    height: 725px;
+    width: 108%;
+    top: 66px;
+    right: -482px;
+    background: url(../img/concept-bg.png) no-repeat top center / contain;
+    z-index: -1;
+    @include foundation.mq(tab) {
+    }
+    @include foundation.mq(sm) {
+      width: 133%;
+    }
+  }
+}
+.policy-content {
+  width: 31.797vw;
+  @include foundation.mq(sm) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &__title {
+    color: foundation.$color-main;
+    font-weight: bold;
+  }
+
+  &__message {
+    margin-top: 34px;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-top: 21px;
+  }
+}
+
+.policy-img {
+  margin-right: 95px;
+  margin-top: 63px;
+  @include foundation.mq(tab) {
+    margin-right: 50px;
+  }
+  @include foundation.mq(sm) {
+    margin-top: 40px;
+    width: 333px;
+  }
+}
+/*=====================================================
+# feature
+===================================================== */
+.feature-inner {
+  margin-top: 160px;
+  display: flex;
+  justify-content: end;
+  @include foundation.mq(sm) {
+    display: block;
+    margin-top: 39px;
+  }
+}
+
+.feature-content {
+  width: 31.797vw;
+  @include foundation.mq(tab) {
+    padding: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    width: 100%;
+    padding: 0 20px;
+  }
+  &__title {
+    color: foundation.$color-main;
+    font-weight: bold;
+    margin-top: 24px;
+    @include foundation.mq(sm) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__message {
+    margin-top: 18px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    @include foundation.mq(sm) {
+      font-size: 2rem;
+      margin-top: 9px;
+    }
+  }
+
+  &__text {
+    margin-top: 26px;
+  }
+}
+.feature-img {
+  justify-content: right;
+  margin-left: 42px;
+  @include foundation.mq(sm) {
+    margin-top: 63px;
+    width: 333px;
+  }
+}
+
+/*=====================================================
+# gallery
+===================================================== */
+.gallery {
+  padding: 160px 0;
+  @include foundation.mq(tab) {
+    padding: 80px;
+  }
+  @include foundation.mq(sm) {
+    padding: 100px 20px;
+  }
+}
+.gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 47px;
+}
+.gallery-item {
+  @include foundation.mq(pc) {
+    width: calc(33.3% - 24px * 2 / 3);
+    &:not(:nth-child(3n + 1)) {
+      margin-left: 24px;
+    }
+    &:nth-child(n + 4) {
+      margin-top: 24px;
+    }
+  }
+  @include foundation.mq(tab) {
+    width: calc(50% - 20px / 2);
+    &:nth-child(even) {
+      margin-left: 20px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
+  }
+  @include foundation.mq(sm) {
+    width: calc(50% - 11.5px / 2);
+    &:nth-child(even) {
+      margin-left: 11.5px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 11.5px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

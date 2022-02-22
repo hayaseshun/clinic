@@ -1,0 +1,39 @@
+@use "../foundation";
+/*=====================================================
+# contact.php
+===================================================== */
+.contact-message {
+  font-weight: 500;
+  span {
+    color: foundation.$color-accent;
+  }
+}
+.contact {
+  padding-bottom: 100px;
+  @include foundation.mq(tab) {
+    margin: 0 20px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px;
+  }
+}
+.contact-footer {
+  margin-top: 60px;
+  text-align: center;
+}
+.contact-btn {
+  background: foundation.$color-background;
+  color: foundation.$color-main;
+  padding: 17px 155px;
+  border: 1px solid foundation.$color-main;
+  border-radius: 28px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: foundation.$color-background;
+    background: foundation.$color-main;
+  }
+  @include foundation.mq(sm) {
+    padding: 9px 115px;
+  }
+}

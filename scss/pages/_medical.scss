@@ -1,0 +1,275 @@
+@use "../foundation";
+/*=====================================================
+# medical-service
+===================================================== */
+.medical-service {
+  margin-bottom: 160px;
+  @include foundation.mq(tab) {
+    margin: 0 20px 100px;
+  }
+  @include foundation.mq(sm) {
+    margin: 0 20px 100px;
+  }
+}
+.special-service-list {
+  margin-top: 80px;
+  @include foundation.mq(tab) {
+    margin-top: 40px;
+  }
+}
+.normal-service-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  position: relative;
+  @include foundation.mq(sm) {
+    font-size: 2rem;
+  }
+}
+.special-service-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  position: relative;
+  @include foundation.mq(sm) {
+    font-size: 2rem;
+  }
+}
+
+.normal-service {
+  margin-bottom: 110px;
+  .page-service-item {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      display: block;
+      content: url(../img/normal-service-tag.png);
+      @include foundation.mq(sm) {
+        content: url(../img/medical-img/tag-01-sp.png);
+        top: 10px;
+        right: 20px;
+      }
+    }
+  }
+}
+.special-service {
+  margin-bottom: 160px;
+  .page-service-item {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      display: block;
+      content: url(../img/special-service-tag.png);
+
+      @include foundation.mq(sm) {
+        content: url(../img/medical-img/tag-02-sp.png);
+        top: 10px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.page-service-bg {
+  background: url(../img/announce-bg.png) no-repeat center center/cover;
+  padding: 10px 0 82px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 45px;
+    height: 50px;
+    width: 50px;
+    background: url(../img/deco-kirakira.png) no-repeat center center/cover;
+    @include foundation.mq(sm) {
+      bottom: 20px;
+      left: 11px;
+      height: 38px;
+      width: 39px;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    right: 25px;
+    height: 120px;
+    width: 113px;
+    z-index: 40;
+    background: url(../img/deco-kirakira-2.png) no-repeat center center/cover;
+    @include foundation.mq(sm) {
+      bottom: 10px;
+      right: 22px;
+      height: 62px;
+      width: 51px;
+    }
+  }
+  @include foundation.mq(sm) {
+    padding: 50px 0 82px;
+  }
+}
+
+.page-service-bg-top {
+  width: 100%;
+  height: 15.703vw;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //height: 201px;
+    height: inherit;
+    background: url(../img/bg-top.png) no-repeat center center/cover;
+  }
+}
+.page-service-bottom-bg {
+  position: relative;
+  height: 7.8vw;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 7.8vw;
+    background-position: top center;
+    background: url(../img/announcebg-bottom.png) no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.service-item-list {
+  display: flex;
+  @include foundation.mq(sm) {
+    display: block;
+  }
+  @include foundation.mq(tab) {
+    flex-wrap: wrap;
+  }
+}
+.service-item {
+  margin-top: 20px;
+  @include foundation.mq(pc) {
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  @include foundation.mq(tab) {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  @include foundation.mq(sm) {
+    width: 100%;
+    margin-top: 25px;
+    & + & {
+      margin-top: 16px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    color: foundation.$color-main;
+    padding: 15px 32px;
+    border: 2px solid foundation.$color-main;
+    border-radius: 12px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    transition: 0.3s;
+    &:hover {
+      color: foundation.$color-background;
+      background: foundation.$color-main;
+    }
+    @include foundation.mq(sm) {
+      padding: 9px 32px;
+    }
+  }
+}
+
+.page-service-inner {
+  margin-top: 60px;
+  @include foundation.mq(tab) {
+    margin: 60px 20px 0;
+  }
+  @include foundation.mq(sm) {
+    margin: 40px 20px 0;
+  }
+}
+
+.page-service-item {
+  padding: 60px;
+  background: foundation.$color-background;
+  & + & {
+    margin-top: 28px;
+  }
+  @include foundation.mq(tab) {
+    padding: 40px;
+  }
+  @include foundation.mq(sm) {
+    padding: 20px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c2c2c2;
+    @include foundation.mq(tab) {
+      padding-bottom: 20px;
+    }
+    @include foundation.mq(sm) {
+      display: block;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__title1 {
+    font-size: 2.8rem;
+    margin-right: 40px;
+    @include foundation.mq(sm) {
+      margin-bottom: 20px;
+      font-size: 2.1rem;
+    }
+  }
+
+  &__title2 {
+    color: foundation.$color-main;
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 40px;
+    @include foundation.mq(sm) {
+      display: block;
+    }
+  }
+  &__text {
+    width: 50%;
+    line-height: (24 /14);
+    margin-right: 40px;
+    @include foundation.mq(sm) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    @include foundation.mq(sm) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
