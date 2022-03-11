@@ -111,7 +111,7 @@ Template Name: トップページ      //ここの記述
       <div class="section-inner">
         <h2 class="section-title">
           <span>
-            <img src="<?php echo get_template_directory_uri() ?>/img/title-deco.png" alt="///"></span> 診療案内 <span><img src="<?php echo get_template_directory_uri() ?>/img/title-deco.png" alt="///">
+            <img src="<?php echo get_template_directory_uri() ?>/img/title-deco.png" alt="///">診療</span> 診療案内 <span><img src="<?php echo get_template_directory_uri() ?>/img/title-deco.png" alt="///">
           </span>
         </h2>
         <div class="announce-items">
