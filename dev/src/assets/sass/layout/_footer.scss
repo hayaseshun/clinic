@@ -1,0 +1,244 @@
+@use "../foundation/color";
+@use "../foundation/mixin";
+
+/*=====================================================
+# footer
+===================================================== */
+.footer {
+  background-color: #dff1fd;
+  position: relative;
+  @include mixin.mq(pc) {
+    padding-top: 80px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: url(../img/wave.png) no-repeat;
+    background-size: cover;
+  }
+  .section-inner {
+    padding-bottom: 60px;
+    @include mixin.mq(tab) {
+      margin: 0 20px;
+      padding: 60px 0;
+    }
+    @include mixin.mq(sm) {
+      margin: 0 20px;
+      padding: 30px 0;
+    }
+  }
+}
+.footer-contact {
+  display: flex;
+  padding: 40px 54px;
+  align-items: center;
+  background: color.$color-background;
+  @include mixin.mq(sm) {
+    display: block;
+    padding: 12px 10px;
+  }
+}
+.footer-left {
+  text-align: center;
+  @include mixin.mq(pc) {
+    margin-right: 40px;
+  }
+  @include mixin.mq(tab) {
+    margin-right: 40px;
+  }
+}
+.footer-logo {
+  margin: 0 auto;
+  max-width: 400px;
+  img {
+    width: 100%;
+  }
+}
+.footer-adores {
+  margin-top: 10px;
+}
+.footer-tel-link {
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
+  width: 100%;
+  p {
+    color: color.$color-main;
+  }
+  img {
+    width: 100%;
+  }
+}
+.footer-tel {
+  margin-top: 20px;
+}
+
+.footer-btn-inner {
+  display: flex;
+  margin-top: 20px;
+  @include mixin.mq(sm) {
+    margin-top: 10px;
+  }
+  .footer-btn {
+    display: inline-block;
+    width: 220px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 40px;
+    @include mixin.mq(sm) {
+      width: 150px;
+      height: 38px;
+      line-height: 38px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .footer-reservation-btn {
+    background: color.$color-main;
+    color: color.$color-background;
+    margin-right: 20px;
+    position: relative;
+    padding-left: 33px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(../img/icon-pc.png) no-repeat center center/cover;
+      width: 25px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 66px;
+      @include mixin.mq(sm) {
+        left: 20px;
+      }
+    }
+  }
+  .footer-contact-btn {
+    color: color.$color-main;
+    border: solid 1px color.$color-main;
+    position: relative;
+    padding-left: 33px;
+    &:hover {
+      background-color: color.$color-main;
+      color: color.$color-background;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(../img/icon-mail.png) no-repeat center center/cover;
+      width: 25px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 47px;
+      @include mixin.mq(sm) {
+        left: 20px;
+      }
+    }
+  }
+}
+
+.footer-calender {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.footer-right {
+  max-width: 385px;
+  width: 100%;
+}
+.iframe-map {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer-links {
+  max-width: 840px;
+  margin: 40px auto 0;
+  @include mixin.mq(sm) {
+    margin: 87px auto 0;
+  }
+}
+.footer-link-items {
+  display: flex;
+  @include mixin.mq(sm) {
+    display: block;
+  }
+}
+.footer-link-item {
+  & + & {
+    @include mixin.mq(pc) {
+      margin-left: 40px;
+    }
+    @include mixin.mq(tab) {
+      margin-left: 40px;
+    }
+    @include mixin.mq(sm) {
+      margin-top: 36px;
+    }
+  }
+}
+.footer-link-item-title {
+  color: color.$color-text;
+  font-size: 1.6rem;
+  font-weight: bold;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.footer-item-list1 {
+  margin-right: 20px;
+}
+.footer-announce-item-list {
+  display: flex;
+}
+.footer-link-list-item {
+  display: block;
+  color: color.$color-text;
+  font-size: 1.6rem;
+  margin-top: 15px;
+  position: relative;
+  padding-left: 12px;
+  font-weight: 500;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent #1391e6;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.footer-bottom {
+  background: color.$color-main;
+  text-align: center;
+  color: color.$color-background;
+  padding: 17px 0;
+
+  @include mixin.mq(sm) {
+    padding: 17px 0 70px;
+  }
+}

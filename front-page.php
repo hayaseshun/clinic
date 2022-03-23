@@ -15,7 +15,7 @@ Template Name: トップページ      //ここの記述
         <div class="slide1 swiper-slide">
           <div class="top__text-content">
             <h1 class="top__text-content-text1">街の皆さまの笑顔を守る</h1>
-            <h1 class="top__text-content-text2">アットホームの雰囲気な歯医者さん</h1>
+            <h1 class="top__text-content-text2">アットホームな歯医者さん</h1>
           </div>
         </div>
         <div class="slide2 swiper-slide">
